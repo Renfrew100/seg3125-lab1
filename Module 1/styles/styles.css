@@ -1,0 +1,132 @@
+body{
+}
+
+.header{
+    font-size: 20px;
+    grid-column: span 12;
+    background-color: #CA6135;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #CA6135;
+    padding-top: 2px;
+}
+
+img{
+    height: auto;
+    position: block;
+    margin-top: 1%;
+    align: center;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid #4b94b4;
+}
+
+.survey-title{
+    grid-column: span 6;
+    font-size: 15px;
+    width: 35%;
+    background-color: #CA6135;
+    text-align: center;
+    border-radius: 5rem;
+    margin: auto;
+    border: 2px solid #CA6135;
+    padding-left: 10px;
+}
+
+.Enter-Names{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #359ECA;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #359ECA;
+    margin: auto;
+    border-radius: 2rem;
+}
+.Enter-Features-Selection{
+    text: bold;
+    grid-column: span 2;
+    width: 25%;
+    background-color: #359ECA;
+    text-align: center;
+    display: block;
+    font-family: "Arial";
+    border: 2px solid #359ECA;
+    padding: auto;
+    margin: auto;
+    border-radius: 2rem;
+}
+.Rating{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #359ECA;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #359ECA;
+    margin: auto;
+    border-radius: 2rem;
+}
+.Selection-UI{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #359ECA;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #359ECA;
+    margin: auto;
+    border-radius: 2rem;
+}
+.Comments{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #359ECA;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #359ECA;
+    margin: auto;
+    border-radius: 2rem;
+}
+.Submit{
+    text: bold;
+    grid-column: span 1;
+    width: 1%;
+    text-align: center;
+    margin-left: auto;
+    font-family: "Arial";
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.Comments{
+    text: bold;
+    grid-column: span 1;
+    width: 50%;
+    background-color: #359ECA;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #359ECA;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+footer{
+    font-size: 30px;
+    grid-column: span 12;
+    background-color: #CA6135;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #CA6135;
+    padding-top: 2px;
+}
