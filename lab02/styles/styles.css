@@ -1,0 +1,81 @@
+.header{
+    font-size: 20px;
+    grid-column: span 12;
+    background-color: #52BD4E;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #B94EBD;
+    padding-top: 2px;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.Headings{
+    grid-column: span 6;
+    font-size: 15px;
+    width: 35%;
+    background-color: #B94EBD;
+    text-align: center;
+    border-radius: 5rem;
+    margin: auto;
+    border: 2px solid #B94EBD;
+    padding-left: 10px;
+}
+
+.Personal_Data{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #B94EBD;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+
+.Products{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #B94EBD;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.Cart{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #B94EBD;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.Closing{
+    text-align: center;
+}
+
+footer{
+    font-size: 15px;
+    grid-column: span 12;
+    background-color: #52BD4E;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #B94EBD;
+    padding-top: 2px;
+}
