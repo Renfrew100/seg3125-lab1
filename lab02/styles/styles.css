@@ -13,6 +13,14 @@
     text-align: center;
 }
 
+button{
+    font-size: large;
+
+    color: #000000;
+    background-color: #52BD4E;
+    border-radius: 5rem;
+}
+
 .Headings{
     grid-column: span 6;
     font-size: 15px;
@@ -25,7 +33,21 @@
     padding-left: 10px;
 }
 
-.Personal_Data{
+#Personal_Data{
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #6e666e;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+
+#Products{
     text: bold;
     grid-column: span 1;
     width: 25%;
@@ -38,21 +60,7 @@
     border-radius: 2rem;
 }
 
-
-.Products{
-    text: bold;
-    grid-column: span 1;
-    width: 25%;
-    background-color: #B94EBD;
-    text-align: center;
-    font-family: "Arial";
-    display: block;
-    border: 2px solid #B94EBD;
-    margin: auto;
-    border-radius: 2rem;
-}
-
-.Cart{
+#Cart{
     text: bold;
     grid-column: span 1;
     width: 25%;

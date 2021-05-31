@@ -15,16 +15,29 @@
     </div>
     <br>
     <form action="index.html" name="my-form" method="POST">
-        <div class="Personal_Data">
+        <div id="Personal_Data" class="user">
             <h2>Personal Data</h2>
+            <h4>Select your preferences (limitations)</h4>
+                <input type="checkbox" id="lactose" value="lactoseFree">
+                <label for="option1" class="checkbox-margin">Lactose Intolerance</label>
+                <input type="checkbox" id="nuts-free" value="NutsFree">
+                <label for="option2" class="checkbox-margin">Nuts Free</label>
+                <input type="checkbox" id="organic" value="Organic">
+                <label for="option3" class="checkbox-margin">Organic</label>
         </div>
     <br>
-        <div class="Products">
+        <div id="Products" class="user">
             <h2>Products</h2>
+            <h4>Here are some available products by user selection</h4>
+            <div id=products></div>
+            <button type="button" onclick="addToCart()">Add To Cart</button>
         </div>
     <br>
-        <div class="Cart">
+        <div id="Cart" class="user">
             <h2>Carts</h2>
+            <p>Here is your cart</p>
+            <button id="checkoutButton" type="button" style="visibility: hidden;" onclick="checkout()">Check Out</button><br>
+            <button type="button" onclick="clearCart()">Clear Cart</button>
         </div>
         <br>
         <div class = Closing>
@@ -36,7 +49,7 @@
         <a href="mailto:amuha044@uottawa.ca">amuha044@uottawa.ca</a></p>
     </footer>
     </form>
-<script src="scripts/main.js"></script>
-<script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/groceries.js"></script>
 </body>
 </html>
