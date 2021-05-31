@@ -38,6 +38,36 @@ button{
     border-radius: 5rem;
 }
 
+#checkmark-position1{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#checkmark-position2{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#checkmark-position3{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#products{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 25px;
+}
 .Headings{
     grid-column: span 6;
     font-size: 15px;
@@ -53,7 +83,7 @@ button{
 #display1{
     text: bold;
     grid-column: span 1;
-    width: 25%;
+    width: 35%;
     background-color: #B94EBD;
     text-align: center;
     font-family: "Arial";
@@ -61,13 +91,13 @@ button{
     border: 2px solid #6e666e;
     margin: auto;
     border-radius: 2rem;
+    position: center;
 }
-
 
 #display2{
     text: bold;
     grid-column: span 1;
-    width: 25%;
+    width: 35%;
     background-color: #B94EBD;
     text-align: center;
     font-family: "Arial";
@@ -80,7 +110,7 @@ button{
 #display3{
     text: bold;
     grid-column: span 1;
-    width: 25%;
+    width: 35%;
     background-color: #B94EBD;
     text-align: center;
     font-family: "Arial";

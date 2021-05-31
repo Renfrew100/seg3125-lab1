@@ -101,7 +101,7 @@ function displayProducts() {
         checkbox.type = "checkbox";
         checkbox.value = item.name;
         checkbox.className = "groceries";
-        let label = document.createTextNode(" " + item.name + " - $" + item.price);
+        let label = document.createTextNode(" " + item.name + " $" + item.price);
         let temp = document.createElement("div");
         temp.appendChild(checkbox);
         temp.appendChild(label);
