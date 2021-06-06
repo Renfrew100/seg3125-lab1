@@ -1,0 +1,136 @@
+.header{
+    font-size: 20px;
+    grid-column: span 12;
+    background-color: #52BD4E;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #B94EBD;
+    padding-top: 2px;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.menu {
+    text: bold;
+    grid-column: span 1;
+    width: 25%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #6e666e;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.display {
+    grid-column: span 12;
+}
+
+button{
+    font-size: large;
+
+    color: #000000;
+    background-color: #52BD4E;
+    border-radius: 5rem;
+}
+
+#checkmark-position1{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#checkmark-position2{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#checkmark-position3{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 90px;
+}
+
+#products{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    padding-left: 25px;
+}
+.Headings{
+    grid-column: span 6;
+    font-size: 15px;
+    width: 35%;
+    background-color: #B94EBD;
+    text-align: center;
+    border-radius: 5rem;
+    margin: auto;
+    border: 2px solid #B94EBD;
+    padding-left: 10px;
+}
+
+#display1{
+    text: bold;
+    grid-column: span 1;
+    width: 35%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #6e666e;
+    margin: auto;
+    border-radius: 2rem;
+    position: center;
+}
+
+#display2{
+    text: bold;
+    grid-column: span 1;
+    width: 35%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #B94EBD;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+#display3{
+    text: bold;
+    grid-column: span 1;
+    width: 35%;
+    background-color: #B94EBD;
+    text-align: center;
+    font-family: "Arial";
+    display: block;
+    border: 2px solid #B94EBD;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.Closing{
+    text-align: center;
+}
+
+footer{
+    font-size: 15px;
+    grid-column: span 12;
+    background-color: #52BD4E;
+    text-align: center;
+    border-radius: 5rem;
+    margin-top: 1%;
+    border: 2px solid #B94EBD;
+    padding-top: 2px;
+}

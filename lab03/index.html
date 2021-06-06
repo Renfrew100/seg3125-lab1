@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/styles.css">
+<title>Ali's Shopping Centre</title>
+</head>
+<body>
+
+<div class="header">
+    <p><b><h1>Ali's Shopping Centre</h1></b></p>
+</div>
+
+    <div class = welcome>
+        <h2>Welcome to Ali's Shopping Centre, feel free to navigate through the options below!</h2> 
+    </div>
+    <br>
+     <div class="menu">
+        <h3>Select the personal data below to start</h3>
+        <div class="navigation" onclick="selectTab(1);">
+            <p>Personal Data</p>
+        </div>
+        <div id="productsArea" class="navigation-button" onclick="selectTab(2);">
+            <p>Products</p>
+        </div>
+        <div id="cartArea" class="navigation-button" onclick="selectTab(3);">
+            <p>Cart</p>
+        </div>
+    </div>
+    <br>
+    <form action="index.html" name="my-form" method="POST">
+        <div id="display1" class="user">
+            <h2>Personal Data</h2>
+            <h4>Select your preferences (limitations)</h4>
+            <div id="checkmark-position1" class="user">
+                <label for="option1" class="checkbox-margin">
+                    <input type="checkbox" id="lactose" value="lactoseFree">
+                    Lactose Intolerance</label><br>
+            </div>
+            <div id="checkmark-position2" class="user">
+                <label for="option2" class="checkbox-margin">
+                    <input type="checkbox" id="nuts-free" value="NutsFree">
+                    Nuts Free</label><br>
+            </div>
+            <div id="checkmark-position3" class="user">
+                <label for="option3" class="checkbox-margin">
+                    <input type="checkbox" id="organic" value="Organic">
+                    Organic</label><br>
+            </div>
+        </div>
+    <br>
+        <div id="display2" class="user">
+            <h2>Products</h2>
+            <h4>Here are some available products by user selection</h4>
+            <div id=products></div>
+            <button type="button" onclick="addToCart()">Add To Cart</button>
+        </div>
+    <br>
+        <div id="display3" class="user">
+            <h2>Carts</h2>
+            <p>Here is your cart</p>
+            <div id="cart"></div>
+            <button id="checkoutButton" type="button" style="visibility: hidden;" onclick="checkout()">Check Out</button><br>
+            <button type="button" onclick="clearCart()">Clear Cart</button>
+        </div>
+        <br>
+    <br>
+    <footer>
+        <p>Author: Ali Aftab, Muhammad<br>
+        <a href="mailto:amuha044@uottawa.ca">amuha044@uottawa.ca</a></p>
+    </footer>
+    </form>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/groceries.js"></script>
+</body>
+</html>
