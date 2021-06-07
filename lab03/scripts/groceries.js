@@ -9,6 +9,8 @@ var products = [
 		lactoseFree: true,
 		nutsFree: true,
         organic: true,
+        veg: false,
+        meat: true,
 		price: 1.00
 	},
     {
@@ -16,6 +18,8 @@ var products = [
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
+        veg: true,
+        meat: false, 
         price: 1.25
 	},
     {
@@ -23,6 +27,8 @@ var products = [
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
+        veg: false,
+        meat: false,
         price: 1.70
 	},
     {
@@ -30,13 +36,17 @@ var products = [
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
+        veg: false,
+        meat: false,
         price: 1.80
 	},
     {
 		name: "Cheese",
-		lactoseFree: true,
+		lactoseFree: false,
 		nutsFree: true,
 		organic: false,
+        veg: false,
+        meat: false,
         price: 1.83
 	},
     {
@@ -44,6 +54,8 @@ var products = [
 		lactoseFree: true,
 		nutsFree: true,
 		organic: false,
+        veg: true,
+        meat: false,
         price: 2.05
 	},
     {
@@ -51,6 +63,8 @@ var products = [
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
+        veg: false,
+        meat: false,
         price: 2.10
 	},
     {
@@ -58,6 +72,8 @@ var products = [
 		lactoseFree: true,
 		nutsFree: false,
 		organic: false,
+        veg: false,
+        meat: false,
         price: 2.50
 	},
     {
@@ -65,6 +81,8 @@ var products = [
 		lactoseFree: true,
 		nutsFree: true,
 		organic: false,
+        veg: true,
+        meat: false,
         price: 2.53
 	},
     {
@@ -72,6 +90,8 @@ var products = [
 		lactoseFree: true,
 		nutsFree: true,
 		organic: true,
+        veg: true,
+        meat: false,
         price: 3.05
 	},
 ];
@@ -82,6 +102,8 @@ function displayProducts() {
     let isLactose = document.getElementById("lactose").checked;
     let isNut = document.getElementById("nuts-free").checked;
     let isOrganic = document.getElementById("organic").checked;
+    let meat = document.getElementById("meat").checked;
+    let veg = document.getElementById("veggie").checked;
     let display = document.getElementById("products");
 
     let array = [...products];
@@ -94,6 +116,12 @@ function displayProducts() {
     }
     if (isOrganic) {
         array = array.filter(item => item.organic);
+    }
+    if (veg){
+        array = array.filter(item => item.veg);
+    }
+    if (meat){
+        array = array.filter(item => item.meat);
     }
 
     array.forEach(item => {

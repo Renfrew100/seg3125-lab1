@@ -2,20 +2,22 @@
 <html>
 <head>
 <link rel="stylesheet" href="styles/styles.css">
-<title>Ali's Shopping Centre</title>
+<title>Central Shopping Centre</title>
 </head>
 <body>
 
 <div class="header">
-    <p><b><h1>Ali's Shopping Centre</h1></b></p>
+    <p><b><h1>Central Shopping Centre</h1></b></p>
 </div>
 
     <div class = welcome>
-        <h2>Welcome to Ali's Shopping Centre, feel free to navigate through the options below!</h2> 
+        <br>
+        <b><h1>Navigate through the options below!</h1></b>
+    </br>
     </div>
     <br>
      <div class="menu">
-        <h3>Select the personal data below to start</h3>
+        <h3>Start by selecting personal data below</h3>
         <div class="navigation" onclick="selectTab(1);">
             <p>Personal Data</p>
         </div>
@@ -26,6 +28,7 @@
             <p>Cart</p>
         </div>
     </div>
+    <br>
     <br>
     <form action="index.html" name="my-form" method="POST">
         <div id="display1" class="user">
@@ -46,7 +49,19 @@
                     <input type="checkbox" id="organic" value="Organic">
                     Organic</label><br>
             </div>
+            <div id="checkmark-position4" class="user">
+                <label for="option4" class="checkbox-margin">
+                    <input type="checkbox" id="meat" value="meat-eater">
+                    Meat-eater</label><br>
+            </div>
+            <div id="checkmark-position5" class="user">
+                <label for="option5" class="checkbox-margin">
+                    <input type="checkbox" id="veggie" value="veggie">
+                    Vegetarian</label><br>
+            </div>
         </div>
+    </br>
+    <br>
     <br>
         <div id="display2" class="user">
             <h2>Products</h2>
@@ -54,6 +69,8 @@
             <div id=products></div>
             <button type="button" onclick="addToCart()">Add To Cart</button>
         </div>
+    </br>
+    <br>
     <br>
         <div id="display3" class="user">
             <h2>Carts</h2>
@@ -63,6 +80,7 @@
             <button type="button" onclick="clearCart()">Clear Cart</button>
         </div>
         <br>
+    </br>
     <br>
     <footer>
         <p>Author: Ali Aftab, Muhammad<br>
