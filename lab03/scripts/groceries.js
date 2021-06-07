@@ -9,71 +9,100 @@ var products = [
 		lactoseFree: true,
 		nutsFree: true,
         organic: true,
-		price: 1.00
+		price: 1.00,
+        Vegeterian: false,
+        meat_eater: true
 	},
     {
 		name: "Bread",
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
-        price: 1.25
+        price: 1.25,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Milk",
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
-        price: 1.70
+        price: 1.70,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Butter",
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
-        price: 1.80
+        price: 1.80,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Cheese",
 		lactoseFree: true,
 		nutsFree: true,
 		organic: false,
-        price: 1.83
+        price: 1.83,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Oranges",
 		lactoseFree: true,
 		nutsFree: true,
 		organic: false,
-        price: 2.05
+        price: 2.05,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Yogurt",
 		lactoseFree: false,
 		nutsFree: true,
 		organic: true,
-        price: 2.10
+        price: 2.10,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Peanuts",
 		lactoseFree: true,
 		nutsFree: false,
 		organic: false,
-        price: 2.50
+        price: 2.50,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
 		name: "Mint",
 		lactoseFree: true,
 		nutsFree: true,
 		organic: false,
-        price: 2.53
+        price: 2.53,
+        Vegeterian: false,
+        meat_eater: false
 	},
     {
-		name: "Pasta",
+		name: "Cabbage",
 		lactoseFree: true,
 		nutsFree: true,
 		organic: true,
-        price: 3.05
+        price: 3.05,
+        Vegeterian: true,
+        meat_eater: false
 	},
+    {
+        name: "Pasta",
+		lactoseFree: true,
+		nutsFree: true,
+		organic: true,
+        price: 3.05,
+        Vegeterian: true,
+        meat_eater: false
+    }
 ];
 
 function displayProducts() {
@@ -82,7 +111,9 @@ function displayProducts() {
     let isLactose = document.getElementById("lactose").checked;
     let isNut = document.getElementById("nuts-free").checked;
     let isOrganic = document.getElementById("organic").checked;
-    let display = document.getElementById("products");
+    let veggie = document.getElementById("Vegeterian").checked;
+    let meat = document.getElementById("meat_eater").checked;
+    let display = document.getElementById("products"),
 
     let array = [...products];
 
@@ -94,6 +125,12 @@ function displayProducts() {
     }
     if (isOrganic) {
         array = array.filter(item => item.organic);
+    }
+    if (veggie){
+        array = array.filter(item => item.Vegeterian);
+    }
+    if (meat){
+        array = array.filter(item => item.meat_eater);
     }
 
     array.forEach(item => {
