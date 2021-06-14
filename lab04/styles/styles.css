@@ -1,17 +1,14 @@
 .serviceType{
     margin-left: 5%;
 }
-.button{ 
-    margin-left: 5px;
-}
 
 footer{
     font-size: 15px;
     grid-column: span 12;
-    background-color: #1ECBE1;
+    background-color: #22b6dd;
     text-align: center;
     border-radius: 5rem;
     margin-top: 1%;
-    border: 2px solid #1ECBE1;
+    border: 2px solid #22b6dd;
     padding-top: 2px;
 }
