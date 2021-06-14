@@ -1,4 +1,9 @@
-
+.serviceType{
+    margin-left: 5%;
+}
+.button{ 
+    margin-left: 5px;
+}
 
 footer{
     font-size: 15px;
