@@ -1,42 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="styles/styles.css">
-<title>Central Shopping Centre</title>
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <title>Physiotherapy Service</title>
+    </head>
 <body>
 
-<div class="header">
-    <p><b><h1>Health Service Site</h1></b></p>
-</div>
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><img src="images/logo-transparent.png" width="130" height="130"> Welcome to my Physiotherapy Clinic</h1>
+    </nav>
 
-    <div class = welcome>
-        <br>
-        <b><h1>Navigate through the options below!</h1></b>
-    </br>
+    <div class="p-3 my-2 border bg-light">
+        <h1 class=""> About us</h1>
+        <p class="p-4 my-2" style="font-size: 28px">We are a small clinic located in London Ontario at 145 Parkway Ave.</p>
+        <p style="font-size: 28px; padding-left: 1.5rem">We are dedicated to providing the utmost <strong>care</strong> to our customers</p>
     </div>
-    <br>
-     <div class="menu">
-        <h3>Start</h3>
-        <div class="navigation" onclick="selectTab(1);">
-            <p></p>
+   
+    <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><width="130" height="130"> List of Services Offered at the Clinic!</h1>
+    </nav>
+
+     <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Soft Tissue Mobilization ($50)</td>
+                <td>Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</td>
+            </tr>
+            <tr>
+                <td>Electrotherapy ($75)</td>
+                <td>In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</td>
+            </tr>
+            <tr>
+                <td>Cryotherapy and Heat Therapy ($30)</td>
+                <td>If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</td>
+            </tr>
+            <tr>
+                <td>Kinesio Taping ($60)</td>
+                <td>Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</td>
+            </tr>
+            <tr>
+                <td>Therapeutic Ultrasound ($40)</td>
+                <td>Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</td>
+            </tr>
+        </tbody>
+    </table>
+
+     
+      <nav class="navbar bg-dark text-white p-3 my-3 ">
+        <h1><width="130" height="130"> Meet the experts!</h1>
+      </nav>
+
+        <div class="row justify-content-around">
+            <div class="card" style="width: 20rem;">
+                <img src="images/phy-1.jpg" height="300px" class="card-img-top" alt="phy-1">
+                <div class="card-body">
+                    <p class="card-text">I'm Robert and specialize in Kinesio Taping. I'm available Monday through Friday from 9am - 5pm. Feel free to contact at robert132@gmail.com.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <img src="images/phy-2.png" height="300px" class="card-img-top" alt="phy-2">
+                <div class="card-body">
+                    <p class="card-text">I'm Mai and specialize in Electrotherapy. I'm available only on weekends for certain timings. Feel free to contact at mai@outlook.com.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;">
+                <img src="images/phy-3.jpg" height="300px" class="card-img-top" alt="phy-3">
+                <div class="card-body">
+                    <p class="card-text">I'm Jesse and specialize in Soft Tissue Mobilization. I'm available only on Thursdays from a set timing from 2pm-3pm and Fridays from 1pm-5pm. Feel free to contact me at jesse323@gmail.com</p>
+                </div>
+            </div>
         </div>
-        <div id="productsArea" class="navigation-button" onclick="selectTab(2);">
-            <p></p>
-        </div>
-        <div id="cartArea" class="navigation-button" onclick="selectTab(3);">
-            <p></p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
+    
     <footer>
         <p>Author: Ali Aftab, Muhammad<br>
         <a href="mailto:amuha044@uottawa.ca">amuha044@uottawa.ca</a></p>
     </footer>
     </form>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/groceries.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
