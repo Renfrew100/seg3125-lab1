@@ -1,138 +1,355 @@
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
     <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link href="styles/styles.css" rel="stylesheet" type="text/css">
-        <title>Physiotherapy Service</title>
+        <link href="styles/index.css" rel="stylesheet">
+        <link rel= "icon" href="images/logo.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="scripts/physiciansVisibility.js"></script>
+        <script src="scripts/verification.js"></script>
+        <title>Physio Vision Center</title>
     </head>
-<body>
 
-    <nav class="navbar bg-dark text-white p-3 my-3 ">
-        <h1><img src="images/logo-transparent.png" width="130" height="130"> Welcome to my Physiotherapy Clinic</h1>
-    </nav>
-
-    <div class="p-3 my-2 border bg-light">
-        <h1 class=""> About us</h1>
-        <p class="p-4 my-2" style="font-size: 28px">We are a small clinic located in London Ontario at 145 Parkway Ave.</p>
-        <p style="font-size: 28px; padding-left: 1.5rem">We are dedicated to providing the utmost <strong>care</strong> to our customers.</p>
-        <p class="p-4 my-2" style="font-size: 28px">Feel free to browse our list of services and select a day/timing below!</p>
-    </div>
-
-    <nav class="navbar bg-dark text-white p-3 my-3 ">
-        <h1><width="130" height="130"> Meet the experts!</h1>
-      </nav>
-
-        <div class="row justify-content-around">
-            <div class="card" style="width: 20rem;">
-                <img src="images/phy-1.jpg" height="300px" class="card-img-top" alt="phy-1">
-                <div class="card-body">
-                    <p class="card-text">I'm Robert and specialize in Kinesio Taping. I'm available Monday through Friday from 9am - 5pm. Feel free to contact at robert132@gmail.com.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="images/phy-2.png" height="300px" class="card-img-top" alt="phy-2">
-                <div class="card-body">
-                    <p class="card-text">I'm Mai and specialize in Electrotherapy. I'm available only on weekends for certain timings. Feel free to contact at mai@outlook.com.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 20rem;">
-                <img src="images/phy-3.jpg" height="300px" class="card-img-top" alt="phy-3">
-                <div class="card-body">
-                    <p class="card-text">I'm Jesse and specialize in Soft Tissue Mobilization. I'm available only on Thursdays from a set timing from 2pm-3pm and Fridays from 1pm-5pm. Feel free to contact me at jesse323@gmail.com</p>
-                </div>
-            </div>
-        </div>
-
-        <nav class="navbar bg-dark text-white p-3 my-3 ">
-            <h1><width="130" height="130"> List of Services Offered at the Clinic!</h1>
-        </nav>
-
-     <table class="table table-info table-hover">
-        <thead>
-            <tr>
-                <th scope="col"><h2>Service</h2></th>
-                <th scope="col"><h2>Description</h2></th>
-            </tr>
-        </thead>
-        <tbody>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Soft Tissue Mobilization ($50)</td>
-                <td>Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</td>
-            </tr>
-            <tr>
-                <td>Electrotherapy ($75)</td>
-                <td>In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</td>
-            </tr>
-            <tr>
-                <td>Cryotherapy and Heat Therapy ($30)</td>
-                <td>If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</td>
-            </tr>
-            <tr>
-                <td>Kinesio Taping ($60)</td>
-                <td>Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</td>
-            </tr>
-            <tr>
-                <td>Therapeutic Ultrasound ($40)</td>
-                <td>Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</td>
-            </tr>
-        </tbody>
-    </table>
-
-        <nav class="navbar bg-dark text-white p-3 my-3 ">
-            <h1><width="130" height="130"> Select a Service</h1>
-        </nav>
-
-        <div class = serviceType>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Soft Tissue Mobilization ($50)</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Electrotherapy ($75)</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Cryotherapy and Heat Therapy ($30)</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Kinesio Taping ($60)</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block">Therapeutic Ultrasound ($40)</button>
-        </div>
+    <body>
         
-        <nav class="navbar bg-dark text-white p-3 my-3 ">
-            <h1><width="130" height="130"> Contact Information </h1>
+        <nav class="navbar bg-dark text-white p-3 w-150">
+            <img src="images/logo.png" height="75" width="75">
+                <h3 id="a">Physio Vision Center</h3>
+                <img src = "images/service.png" height = "60" width = "60" id = "service">
+                <img src = "images/selection.png" height = "75" width = "60" id = "selection">
+                <img src = "images/physicians.png" height = "60" width = "60" id = "physiciansicon">
+                <img src = "images/personalinfo.png" height = "60" width = "60" id = "personalinfo">
+                <img src = "images/paymenticon.png" height = "60" width = "60" id = "paymenticon">
+                <a class="navbar-brand text-white nav-link" href="#services" id="c">Services</a>
+                <a class="navbar-brand text-white nav-link" href="#choose" id="d">Selection</a>
+                <a class="navbar-brand text-white nav-link" href="#servicePhysician" id="e">Physicians</a>
+                <a class="navbar-brand text-white nav-link" href="#personalInformation" id="f">Personal Data</a>
+                <a class="navbar-brand text-white nav-link" href="#payment" id="g">Payment</a>
         </nav>
 
-        <div id="fname">
-            <label>Enter your First Name: </label>
-            <div class="input-group mb-2 w-50" >
-                <input type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
+        <div class="container">
+
+           
+
+
+            <nav class="navbar navbar-light bg-light">
+                <h3>We are located at 75 Laurier Ave. E, Ottawa, ON K1N 6N5 <br> We also provide excellent customer service that will restore your health immediately</h3> 
+            </nav> <br>
+
+            <h1>Meet the Physicians!</h1>
+
+            <div class="row justify-content-around">
+                <div class="card" style="width: 15rem;" id="physician1">
+                    <img class="card-img-top" src="images/physician1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Jotaro Kujo</h5>
+                      <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy. He is available 24/7 from Sunday to Saturday everyday</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;" >
+                    <img class="card-img-top" height="160px" src="images/physician2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Joseph Joestar</h5>
+                        <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters. He is available 24/7 from Sunday to Saturday everyday </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem;" >
+                    <img class="card-img-top" height="160px" src="images/physician3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Boa Hancock</h5>
+                        <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients! She is available 24/7 from Sunday to Saturday everyday</p>
+                    </div>
+                </div>
             </div>
+
+            <nav class="navbar bg-dark text-white p-3 my-3 ">
+                <img src = "images/service.png" height = "60" width = "60">
+                <h1 id="services">We offer 5 main services to our customers </h1>
+            </nav>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <img src="images/tissue2.png"  class = "serviceicon" height = "50" width="75">
+                            <t> 1. Soft Tissue Mobilization ($20)</t>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Also referred to as therapeutic massage, soft tissue mobilization can help relax a patient’s muscles and reduce swelling in certain areas, making this treatment excellent for relieving pain associated with athletic injuries.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <img src="images/electro.jpg"  class = "serviceicon" height = "50" width="75">
+                           <t>2. Electrotherapy ($50)</t>
+                           
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">In this form of treatment, electrical stimulation is provided by attaching electrodes to the skin. The electrodes cause the muscles to shorten, which in turn helps prevent atrophy.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <img src ="images/cryoheat.jpg" height="50" width="78" class = "serviceicon" >
+                           <t>3. Cryotherapy and Heat Therapy ($35)</t> 
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">If a patient complains of muscle tightness anywhere on their body, it may be beneficial to apply heat or cold to the aggravated areas. Heat therapy includes the application of hot packs or even paraffin wax. Cryotherapy may involve an ice pack application or an ice massage.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <img src ="images/kinesio.png" height="50" width="78" class = "serviceicon" >
+                            <t>4. Kinesio Taping ($67)</t>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Kinesio tape can be applied straight to the skin and is a great way to stabilize the joints and muscles while the patient undergoes treatment.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            <img src ="images/ultrasound.jpg" height="50" width="78" class = "serviceicon" >
+                            <t>5. Therapeutic Ultrasound ($56)</t>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Ultrasound frequency provides a gentle method for targeting damaged tissue with soft beams. Like a mini massage, the sound waves of the ultrasound stimulate and are absorbed by the ligaments, tendons, and fascia. This treatment can be used for patients suffering from arthritis, tendonitis and muscle strain.</div>
+                    </div>
+                </div>
+            </div>
+            
+                
+                    
+                        
+                      
+                    
+
+
+            <nav class="navbar bg-dark text-white p-3 my-3 ">
+                <img src = "images/selection.png" height = "75" width = "60">
+                <h1 id="choose">Choose a service to get started! </h1>
+            </nav> <br>
+
+            <div class="btn-group-vertical w-50" role="group" aria-label="Basic radio toggle button group">
+              
+                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" value = "Soft Tissue Mobilization">
+                <label class="btn btn-outline-primary" for="btnradio1">1. Soft Tissue Mobilization</label>
+               
+                <br>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value = "Electrotherapy">
+                <label class="btn btn-outline-primary" for="btnradio2">2. Electrotherapy</label>
+
+                <br>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value = "Cryotherapy and Heat Therapy" >
+                <label class="btn btn-outline-primary" for="btnradio3">3. Cryotherapy and Heat Therapy</label>
+
+                <br>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" value = "Kinesio Taping">
+                <label class="btn btn-outline-primary" for="btnradio4">4. Kinesio Taping</label>
+
+                <br>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" value = "Therapeutic Ultrasound" >
+                <label class="btn btn-outline-primary" for="btnradio5">5. Therapeutic Ultrasound</label>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="physicians">
+
+                <nav class="navbar bg-dark text-white p-3 my-3" id="servicePhysician">
+                    <img src = "images/physicians.png" height = "60" width = "60">
+                    <h1 id = "p">Choose the physician you want to have your service with!</h1>
+                </nav> <br>
+
+                <div class="row justify-content-around">
+                    <div class="card" style="width: 15rem;" id="physician1">
+                        <img class="card-img-top" src="images/physician1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Jotaro Kujo</h5>
+                          <p class="card-text">Jotaro has 10 years of physiotherapy experience and has a PhD in physiotherapy</p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="jotaro" autocomplete="off" value = "Jotaro Kujo">
+                        <label class="btn btn-outline-primary" for="jotaro">Jotaro Kujo</label>
+                    </div>
+                    <div class="card" style="width: 15rem;" >
+                        <img class="card-img-top" height="160px" src="images/physician2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Joseph Joestar</h5>
+                            <p class="card-text">Joseph has a masters in physiotherapy and went to the University of Ottawa for his undergrad and the University of Waterloo for his masters </p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="joseph" autocomplete="off" value = "Joseph Joestar">
+                        <label class="btn btn-outline-primary" for="joseph">Joseph Joestar</label>
+                    </div>
+                    <div class="card" style="width: 15rem;" >
+                        <img class="card-img-top" height="160px" src="images/physician3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Boa Hancock</h5>
+                            <p class="card-text">Boa has worked in this clinic for over 20 years and has helped well over 5000 patients!</p>
+                        </div>
+                        <input type="radio" class="btn-check " name="physicians" id="boa" autocomplete="off" value = "Boa Hancock">
+                        <label class="btn btn-outline-primary" for="boa">Boa Hancock</label>
+                    </div>
+                </div>
+    
+            </div>
+
+            <br>
+
+            <div id="personalInformation">
+
+                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                    <img src = "images/personalinfo.png" height = "60" width = "60">
+                    <h1 id="pe">Personal Data</h1>
+                </nav> <br>
+
+
+                <div id="fname">
+                    <label>Enter your First Name: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" maxLength="1000000000" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id="firstname">
+                    </div>
+                </div>
+
+                <div id="lname">
+                    <label>Enter your Last Name: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" maxLength="1000000000" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id ="lastname">
+                    </div>
+                </div>
+
+                <div id="email">
+                    <label>Enter your Telephone number: </label>
+                    <div class="input-group mb-3 w-50" >
+                        <input type="text" maxLength ="11" class="form-control" placeholder="xxx xxx xxx" aria-label="Phone Number" aria-describedby="basic-addon1" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your personal information in order to verify if it is actually you or not" id ="phone">
+                    </div>
+                </div>
+
+                <div id="datetime"> 
+                    <label for="meeting-time">Choose a date and time for your appointment:</label> <br>
+                    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-06-28T19:30" min="2021-06-28T00:00" max="2022-06-28T00:00"> 
+                </div>
+                
+            </div>
+            
+
+            <div id="payment">
+                <nav class="navbar bg-dark text-white p-3 my-3 ">
+                    <img src = "images/paymenticon.png" height = "60" width = "60">
+                    <h1 id = "noy">Payment</h1>
+                </nav> <br>
+
+                <div class="my-3">
+                    <div class="form-check">
+                      <img src = "images/credit.png" height = "80" width = "80" class="paymenticon">
+                      <span id = "position">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" required>
+                        <label class="form-check-label" for="credit">Credit card</label>
+                      </span>
+                    </div>
+                    <div class="form-check">
+                        <img src = "images/paypal.png" height = "80" width = "80" id = "paypalimage">
+                        <span id = "paypalposition">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </span>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                      <label for="cc-name" class="form-label">Name on card</label>
+                      <input type="text" id="nameoncard" maxLength="1000000000" class="form-control" id="cc-name" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="Full name as displayed on card" required >
+                      <div class="invalid-feedback">
+                        Name on card is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                      <label for="cc-number" class="form-label">Card number</label>
+                      <input maxLength ="19" type="text" class="form-control" id="cc-number" placeholder="XXXX XXXX XXXX XXXX" data-bs-toggle="tooltip" data-bs-placement="top" title="We need your credit card number and other personal information in case of a last minute cancellation and remember to put a space in between four numbers" required>
+                      <div class="invalid-feedback">
+                        Card number is required
+                      </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <label for="cc-cvv" class="form-label">CVV</label>
+                      <input type="text" maxLength = "3" class="form-control" id="cc-cvv" placeholder="" data-bs-toggle="tooltip" data-bs-placement="top" title="This is three digit number located at the back of your credit card" required>
+                      <div class="invalid-feedback">
+                        Security code required
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+
+                <button onclick = "creditcardCheck()" class="w-100 btn btn-primary btn-lg" type="submit"  id="checkout">Continue to checkout</button>
+    
+            </div>
+
+            <br>
+
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to submit?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <button name="yes" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Yes</button>
+                                <button type="button" name="no" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <h4 id="request"></h4>
+
+              <br>
+
+              <footer class="footer mt-auto py-3 bg-dark">
+                <div class="container"> 
+                    <span class="text-white" id = "b">Site created by Giorno Giovanna</span>
+                </div>
+              </footer>
+
+              <br>
+              <br>
+
+
         </div>
 
-        <div id="lname">
-            <label>Enter your Last Name: </label>
-            <div class="input-group mb-2 w-50" >
-                <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
-            </div>
-        </div>
-
-        <div id="Email">
-            <label>Enter your Email: </label>
-            <div class="input-group mb-2 w-50" >
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-            </div>
-        </div>
-
-        <div id="datetime"> 
-            <label for="meeting-time">Choose a date and time for your appointment:</label> <br>
-            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2021-06-14T19:30" min="2021-06-14T00:00" max="2022-06-28T00:00"> 
-          </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
+    </body>
 
 
-          
-    <footer>
-        <p>Author: Ali Aftab, Muhammad<br>
-        <a href="mailto:amuha044@uottawa.ca">amuha044@uottawa.ca</a></p>
-    </footer>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
 </html>
